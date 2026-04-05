@@ -1,0 +1,20 @@
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+
+namespace PokedexExplorer.Model
+{
+    [Index(nameof(Ability.Name), IsUnique = false, Name = "IndexAbilityName")]
+    [Index(nameof(Ability.Generation), IsUnique = false, Name = "IndexAbilityGeneration")]
+    public class Ability
+    {
+        [Required]
+        [Key]
+        public int ID { get; set; }
+        [Required]
+        public string Name { get; set; }
+        public string? Effect { get; set; }
+        public string? ShortEffect { get; set; }
+        public string? Description { get; set; }
+        public int? Generation { get; set; }
+    }
+}
