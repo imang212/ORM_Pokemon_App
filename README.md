@@ -17,19 +17,20 @@
 
 ## Project Structure
 ```bash
-├── pokemondb/              # Pre-configured PostgreSQL database cluster 
-├── PokedexExplorer/        # Main WPF Application
-│   ├── Data/               # Database Context and PokéAPI Fetcher logic
-│   ├── Data/PokemonDbContext.cs 
-│   ├── Models/             # Entity Framework Data Models (Pokemon, Move, etc.)
-│   ├── ViewModels/         # UI Logic and Data Binding (if applicable)
-│   ├── MainWindow.xaml     # Main UI Layout
-│   └── PokedexExplorer.csproj
-├── ORM_presentation_CZ.md  # Project presentation in czech
-├── ORM_presentation_EN.md  # Project presentation in english
-├── TUTORIAL.md             # Step-by-step educational guide
-├── TUTORIAL_CZ.md          # Step-by-step educational guide in czech
-└── README.md               # project readme
+├── pokemondb/                                    # Pre-configured PostgreSQL database cluster 
+├── PokedexExplorer/                              # Main WPF Application
+│   ├── PokedexExplorer/PokedeData/               # Database Context and PokéAPI Fetcher logic
+│   ├── PokedexExplorer/Data/PokemonDbContext.cs  # Main database initialization file
+│   ├── PokedexExplorer/Models/                   # Entity Framework Data Models (Pokemon, Move, etc.)
+│   ├── PokedexExplorer/ViewModels/               # UI Logic and Data Binding (if applicable)
+│   ├── PokedexExplorer/MainWindow.xaml           # Main UI Layout
+│   ├── PokedexExplorer/PokedexExplorer.csproj    # Project build file
+│   └── PokedexExplorer.sln                       # Visual Studio Solution
+├── ORM_presentation_CZ.md                        # Project presentation in czech
+├── ORM_presentation_EN.md                        # Project presentation in english
+├── TUTORIAL.md                                   # Step-by-step educational guide
+├── TUTORIAL_CZ.md                                # Step-by-step educational guide in czech
+└── README.md                                     # Project readme
 ```
 
 ## Key Features
